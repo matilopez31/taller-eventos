@@ -1,8 +1,8 @@
-document.addEventListener('DOMContentLoaded', function()
+document.addEventListener('DOMContentLoaded', function() 
 {
     const divboton = document.querySelector('.boton');
-    divboton.addEventListener('click', function()
+    divboton.addEventListener('click', function(evento) 
     {
-        alert('Hola! Soy el div');
+        evento.stopPropagation();
     });
 });
